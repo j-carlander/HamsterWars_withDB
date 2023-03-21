@@ -1,0 +1,17 @@
+<nav>
+  <div style="display: flex">
+    {{^session}}
+    <form action="/login" method="post">
+      <button type="submit">Log In</button>
+    </form>
+    {{/session}} {{#session}}
+    <form action="/logout" method="post">
+      <button type="submit">Log Out</button>
+    </form>
+    {{/session}} {{#admin}}
+    <form action="/manage" method="get">
+      <button type="submit">Manage users</button>
+    </form>
+    {{/admin}}
+  </div>
+</nav>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/style.css" />
+  </head>
+  <body>
+    {{>partials/nav}}
+    <h2>Results</h2>
+    <div class="flex">
+      {{#hamsters}}
+      <div class="contendant">
+        <img src="{{img}}" width="450" />
+        <p class="{{name}}">{{votes}}</p>
+      </div>
+      {{/hamsters}}
+    </div>
+    <div class="graph-wrapper">
+      {{#hamsters}}
+      <div class="{{name}}" style="flex-grow:{{votes}};"></div>
+      {{/hamsters}}
+    </div>
+    <p class="total">Total votes: <span>{{total}}</span></p>
+    <a href="/vote">Take a vote!</a>
+    <a href="/">Home</a>
+  </body>
+</html>

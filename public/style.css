@@ -1,0 +1,82 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+a {
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+.flex {
+  display: flex;
+  gap: 1em;
+  width: max-content;
+}
+.grid {
+  display: grid;
+  align-items: center;
+}
+.vote-btn {
+  padding: 0.75em 1.5em;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.contendant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+}
+.contendant p {
+  padding: 1em 2em 0;
+  width: max-content;
+  text-shadow: 0 0 15px white;
+  font-size: large;
+  font-weight: 700;
+}
+.graph-wrapper {
+  display: flex;
+  width: 916px;
+  height: 40px;
+}
+.hamster_1,
+.hamster_2 {
+  height: 40px;
+}
+.hamster_1 {
+  background-color: rgb(0, 195, 255);
+}
+.hamster_2 {
+  background-color: rgb(225, 0, 255);
+}
+.total {
+  margin-bottom: 3em;
+  font-size: large;
+  font-weight: 700;
+}
+
+.modal-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(68, 68, 68, 0.4);
+}
+.modal {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border: 1px solid black;
+  padding: 5em 6em;
+}
+
+.user-card {
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px black;
+  padding: 0.5em;
+  margin: 1em;
+}
